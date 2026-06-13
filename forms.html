@@ -7,50 +7,26 @@
 <title>Accessing and Printing Player Forms as a Coach - AYSO Wiki</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..1000&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..1000&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Roboto+Condensed:wght@700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="forms.css" rel="stylesheet"/>
+<link href="shared.css" rel="stylesheet"/>
 </head>
 <body>
-<header class="topbar">
-<div class="topbar__inner">
-<div class="topbar__brand">AYSO Wiki</div>
-<div class="topbar__controls">
-<form action="#" class="topbar__search" role="search">
-<label class="visually-hidden" for="wiki-search">Search wiki</label>
-<input id="wiki-search" placeholder="Search Wiki..." type="search"/>
-<span class="material-symbols-outlined">search</span>
-</form>
-<div class="topbar__actions">
-<button aria-label="Help" class="icon-button" type="button">
-<span class="material-symbols-outlined">help</span>
-</button>
-<button aria-label="Account" class="icon-button" type="button">
-<span class="material-symbols-outlined">account_circle</span>
-</button>
-</div>
-</div>
-</div>
-</header>
-
-<aside aria-label="Volunteer resources" class="sidebar">
+<nav aria-label="Volunteer resources" class="sidebar">
 <div class="sidebar__content">
 <div class="sidebar__brand">
 <div class="sidebar__logo">
 <span class="material-symbols-outlined">sports_soccer</span>
 </div>
-<div>
 <h2 class="sidebar__title">Volunteer Resources</h2>
 <p class="sidebar__tagline">Everyone Plays®</p>
 </div>
-</div>
-
-<nav class="sidebar__nav">
+<div class="sidebar__nav">
 <a class="sidebar__link" href="#">
 <span class="material-symbols-outlined">home</span>
 <span>Home</span>
 </a>
-<a class="sidebar__link sidebar__link--active" href="#">
+<a class="sidebar__link is-active" href="#">
 <span class="material-symbols-outlined">sports_soccer</span>
 <span>Coaches</span>
 </a>
@@ -66,8 +42,7 @@
 <span class="material-symbols-outlined">security</span>
 <span>Safe Haven</span>
 </a>
-</nav>
-
+</div>
 <div class="sidebar__footer">
 <button class="button button--register" type="button">Register Now</button>
 <div class="sidebar__support">
@@ -77,12 +52,35 @@
 </a>
 <a href="#">
 <span class="material-symbols-outlined">contact_support</span>
-<span>Contact Support</span>
+<span>Support</span>
 </a>
 </div>
 </div>
 </div>
-</aside>
+</nav>
+
+<header class="topbar">
+<div class="topbar__inner">
+<h1 class="topbar__title">AYSO Wiki</h1>
+<div class="topbar__controls">
+<div class="topbar__search" role="search">
+<label class="visually-hidden" for="resource-search">Search resources</label>
+<div class="topbar__search-field">
+<input id="resource-search" placeholder="Search resources..." type="text"/>
+<span class="material-symbols-outlined">search</span>
+</div>
+</div>
+<div class="topbar__icons">
+<button aria-label="Help" class="icon-button" type="button">
+<span class="material-symbols-outlined">help</span>
+</button>
+<button aria-label="Account" class="icon-button" type="button">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</div>
+</header>
 
 <main class="page">
 <div class="page-shell">
