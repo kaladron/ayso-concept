@@ -132,7 +132,7 @@ summary {
     width: 5rem;
     aspect-ratio: 1;
     border-radius: 50%;
-    background: var(--brand-blue);
+    // background: var(--brand-blue);
     color: #d6e3ff;
     box-shadow: var(--shadow-soft);
 }
